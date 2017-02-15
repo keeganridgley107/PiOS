@@ -1,5 +1,5 @@
 # PiOS
-![ScreenShot](https://raw.github.com/keeganridgley107/PiOS/readmeMedia/piostitle.png)
+![ScreenShot](https://raw.github.com/keeganridgley107/PiOS/readmemedia/piostitle.png)
 
 ##PiOS is an app designed to quickly connect users with secure servers and stream media to their mobile devices
 
@@ -9,13 +9,13 @@ PiOS Media Servers runs on linux and use NodeJS, OpenWRT, FOSS and UPnP technolo
 ##The PiOS app auto-detects if a PiOS Media Server is in range of a users mobile device
 If the PiOS app does not detect a PiOS WIFI signal it alerts the user
 
-![ScreenShot](https://raw.github.com/keeganridgley107/PiOS/readmeMedia/networkfail.png)
+![ScreenShot](https://raw.github.com/keeganridgley107/PiOS/readmemedia/networkfail.png)
 
 
 
 ##The PiOS iOS app cleanly connects users to The PiOS Server's Local Area Network
 If the user is in range of a PiOS Media Server the PiOS app connects and the user proceeds to login or create a new user profile  
-![ScreenShot](https://raw.github.com/keeganridgley107/PiOS/readmeMedia/networkyes.png)
+![ScreenShot](https://raw.github.com/keeganridgley107/pios/readmeMedia/networkyes.png)
 
 ##Technical Details
 ![ScreenShot](https://raw.github.com/keeganridgley107/PiOS/readmeMedia/about.png)
