@@ -1,0 +1,28 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.modal {
+  background: transparent !important;
+}
+
+.fullscreenModal{
+ top: 0 !important;
+ bottom: 0 !important;
+ left: 0 !important;
+ right: 0 !important;
+ width: 0.01% !important;
+}
+
+.avatar-list{
+  width: 50px !important;
+  margin-left: 20px !important;
+}
+
+img{
+  height:100px;
+}
+
+.has-header{
+  background-color: rgba(155, 155, 155, 0.4);
+}

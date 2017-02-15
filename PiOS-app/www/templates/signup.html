@@ -1,0 +1,21 @@
+<ion-view title="Signup" id="page7" ng-controller="signupCtrl as $ctrl">
+  <ion-content padding="true" class="has-header">
+    <form id="signup-form2" class="list" name="signupForm" novalidate>
+      <ion-list id="signup-list2">
+        <label class="item item-input" id="signup-input3">
+          <span class="input-label">Email</span>
+          <input required type="text" placeholder="" name="email" ng-model="$ctrl.signupForm.email">
+        </label>
+        <label class="item item-input" id="signup-input4">
+          <span class="input-label">Username</span>
+          <input type="text" placeholder="" name="username" ng-model="$ctrl.signupForm.username">
+        </label>
+        <label class="item item-input" id="signup-input5">
+          <span class="input-label">Password</span>
+          <input required type="text" placeholder="" name="password" ng-model="$ctrl.signupForm.password">
+        </label>
+      </ion-list>
+      <a ng-disabled="!signupForm.$dirty" id="signup-button5" class="button button-stable  button-block" ng-click="$ctrl.signup()">Sign up</a>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view title="Home" id="page2" ng-controller="homeCtrl as $ctrl">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="home-list4">
+      <ion-item class="item-thumbnail-left item-icon-right" id="home-list-item2" ng-repeat="post in $ctrl.data | orderBy: $ctrl.data.username">
+        <img ng-src="http://eggnogg:8000/{{post.avatar_path}}" alt="avatar img" class="avatar-list">
+        <h2>{{ post.name }}</h2>
+        <p>{{ post.username }}</p>
+        <i class="icon {{ post.icon }}"></i>
+        <!-- <a href="{{$ctrl.returnPath(post)}}" download>Download</a> -->
+        <!-- <ion-option-button class="button-royal">DOWNLOAD</ion-option-button> -->
+        <ion-option-button class="button-energized" ng-click="$ctrl.playback(post)">VIEW</ion-option-button>
+        <div ng-if="post.showMedia" >
+          <video ng-src="{{$ctrl.returnPath(post)}}" class="centerme fullscreenModal fullscreen-player" controls="controls" autoplay></video>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

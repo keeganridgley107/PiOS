@@ -1,0 +1,41 @@
+{
+  "name": "q2pi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "knex migrate:latest",
+    "knex": "knex",
+    "start": "nodemon app.js /dev/ttyACM0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenHanzlik/q2pi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenHanzlik/q2pi/issues"
+  },
+  "homepage": "https://github.com/StephenHanzlik/q2pi#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.0",
+    "body-parser": "^1.15.2",
+    "boom": "^4.2.0",
+    "cookie-parser": "^1.4.3",
+    "cordova-plugin-streaming-media": "^1.0.2",
+    "engines": {
+      "node": "v7.2.0"
+    },
+    "express": "^4.14.0",
+    "formidable": "^1.0.17",
+    "jsonwebtoken": "^7.2.1",
+    "knex": "^0.12.6",
+    "longjohn": "^0.2.11",
+    "morgan": "^1.7.0",
+    "pg": "^6.1.0",
+    "serialport": "^4.0.7"
+  }
+}

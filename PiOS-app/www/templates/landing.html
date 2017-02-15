@@ -1,0 +1,27 @@
+<div ng-controller="landingCtrl as $ctrl">
+  <ion-view id="page6">
+    <ion-content padding="true" class="has-header">
+      <div class="spacer" style="height: 100px;"></div>
+      <h2 id="landing-heading1" style="color:#000000;text-align:center;">Welcome to PiOS Media</h2>
+      <div class="spacer" style="height: 100px;"></div>
+      <a ui-sref="login" id="landing-button4" class="button button-positive  button-block">Login!</a>
+      <div class="spacer" style="height: 50px;"></div>
+      <h2>PiOS Media</h2>
+        
+    </ion-content>
+  </ion-view>
+  <script id="wifi-modal.html" type="text/ng-template">
+    <ion-modal-view>
+      <div class="card">
+        <div class="item item-divider">
+        </div>
+        <div class="item item-text-wrap">
+          <h2 style="text-align:center;">{{$ctrl.message[0]}}<div><i class="icon ion-wifi"></i>{{$ctrl.wifiName}}<i class="icon ion-wifi"></i></div>{{$ctrl.message[1]}}</h2>
+          <button ng-if="$ctrl.showModal" class="button button-block button-calm" ng-click="$ctrl.testNetwork()">{{$ctrl.buttonMessage}}</button>
+        </div>
+        <div class="item item-divider">
+        </div>
+      </div>
+    </ion-modal-view>
+  </script>
+</div>

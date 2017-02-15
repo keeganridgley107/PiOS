@@ -1,0 +1,24 @@
+<ion-view title="Login" id="page5" ng-controller="loginCtrl as $ctrl">
+  <ion-content padding="true" class="has-header">
+    <form id="login-form1" class="list" name="loginForm" novalidate>
+      <ion-list id="login-list1">
+        <label class="item item-input" id="login-input1">
+          <span class="input-label">Email</span>
+          <input required type="text" name="email" ng-model="$ctrl.loginForm.email">
+        </label>
+        <label class="item item-input" id="login-input2">
+          <span class="input-label">Password</span>
+          <input required type="password" ng-model="$ctrl.loginForm.password" name="password">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <a ng-click="$ctrl.login()" id="login-button2" class="button button-stable  button-block" ng-disabled="!loginForm.$dirty">Log in</a>
+      <!-- ui-sref="tabsController.home" -->
+      <!-- ui-sref="tabsController.home" -->
+      <!-- onclick="window.plugins.toast.showLongBottom('Hello toast')" -->
+      <!-- window.plugins.toast.show('You must enter a password', 'long', 'center') -->
+      <!-- ui-sref="tabsController.home" -->
+      <a ui-sref="signup" id="login-button3" class="button button-positive  button-block button-clear">Or create an account</a>
+    </form>
+  </ion-content>
+</ion-view>

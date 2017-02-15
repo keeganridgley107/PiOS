@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Admin Upload</title>
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="images/angel.png" />
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top main-nav" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="top-logo">
+                    <h1><a href="index.html">PiOS </a>| Streaming Media <img id="pray-logo" src="images/icon.png"></h1>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="nav-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about.html">About PiOS</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container upload-container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>File Uploader</h2>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar"></div>
+                        </div>
+                        <input id="upload-input" type="file" name="uploads[]" multiple="multiple">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="/js/vendors/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/vendors/bootstrap.min.js"></script>
+    <script src="js/upload.js"></script>
+    <script type="text/javascript" src="js/signout.js"></script>
+
+</body>
+
+</html>

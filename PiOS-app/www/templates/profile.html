@@ -1,0 +1,45 @@
+<ion-view title="Profile" id="page4" ng-controller="profileCtrl as $ctrl">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="profile-list5">
+      <ion-item class="item-avatar" id="profile-list-item3">
+        <img ng-src="http://eggnogg:8000/{{$ctrl.data.avatar_path}}" alt="avatar profile" id="avatar-prof">
+        <h2 ng-model="profileUploads">{{ $ctrl.data.username }}</h2>
+        <p>{{ $ctrl.data.email }}</p>
+      </ion-item>
+      <ion-item id="profile-list-item4">
+        <h2>PiOS Member Since: </h2>
+        <p>{{ $ctrl.data.created_at | date : format : timezone }}</p>
+      </ion-item>
+      <ion-list id="profile-list6">
+        <ion-item class="item-icon-right" id="profile-list-item8">{{ $ctrl.data.username }}
+          <i class="icon ion-android-person"></i>
+          <ion-option-button class="button-assertive">DELETE</ion-option-button>
+          <ion-option-button class="button-calm">EDIT</ion-option-button>
+        </ion-item>
+        <ion-item class="item-icon-right" id="profile-list-item9">{{ $ctrl.data.email }}
+          <i class="icon ion-ios-email"></i>
+          <ion-option-button class="button-assertive">DELETE</ion-option-button>
+          <ion-option-button class="button-calm">EDIT</ion-option-button>
+        </ion-item>
+        <ion-item class="item-icon-right" id="profile-list-item17">YOUR MEDIA
+          <i class="icon ion-ios-film"></i>
+          <ion-option-button class="button-calm">NEW UPLOAD</ion-option-button>
+        </ion-item>
+        <ion-item>
+          <ion-list id="profile">
+            <ion-item class="item-thumbnail-left item-icon-right" id="profile-list" ng-repeat="post in $ctrl.uploadData | filter:{username: $ctrl.profileFilter}">
+              <img ng-src="http://eggnogg:8000/{{$ctrl.data.avatar_path}}" alt="avatar img" class="avatar-list">
+              <h2>{{ post.name }}</h2>
+              <p>{{ post.username }}</p>
+              <i class="icon {{ post.icon }}"></i>
+              <ion-option-button class="button-energized" ng-click="$ctrl.playback(post)">VIEW</ion-option-button>
+              <div ng-if="post.showMedia">
+                <video ng-src="{{$ctrl.returnPath(post)}}" class="centerme fullscreenModal fullscreen-player" controls="controls" autoplay></video>
+              </div>
+            </ion-item>
+          </ion-list>
+        </ion-item>
+      </ion-list>
+    </ion-list>
+  </ion-content>
+</ion-view>
