@@ -1,5 +1,5 @@
 # PiOS
-![ScreenShot](https://raw.github.com/keeganridgley107/PiOS/readmemedia/piostitle.png)
+![ScreenShot](readmeMedia/piostitle.png?raw=true "Title")
 
 ##PiOS is an app designed to quickly connect users with secure servers and stream media to their mobile devices
 
@@ -15,10 +15,10 @@ If the PiOS app does not detect a PiOS WIFI signal it alerts the user
 
 ##The PiOS iOS app cleanly connects users to The PiOS Server's Local Area Network
 If the user is in range of a PiOS Media Server the PiOS app connects and the user proceeds to login or create a new user profile  
-![ScreenShot](https://raw.github.com/keeganridgley107/pios/readmeMedia/networkyes.png)
+![ScreenShot](readmeMedia/networkyes.png?raw=true "Title")
 
 ##Technical Details
-![ScreenShot](https://raw.github.com/keeganridgley107/PiOS/readmeMedia/about.png)
+![ScreenShot](readmeMedia/about.png?raw=true "Title")
 
 ##Meet the PiOS Team
-![ScreenShot](https://raw.github.com/keeganridgley107/PiOS/readmeMedia/team.png)
+![ScreenShot](readmeMedia/team.png?raw=true "Title")
