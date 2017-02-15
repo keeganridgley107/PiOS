@@ -1,7 +1,7 @@
 # PiOS
+##PiOS is an app designed to quickly connect users with secure servers and stream media to their mobile devices
 ![ScreenShot](readmeMedia/piostitle.png?raw=true "Title")
 
-##PiOS is an app designed to quickly connect users with secure servers and stream media to their mobile devices
 
 PiOS Media Servers are secure offline LAN servers built on The Raspberry Pi 3.
 PiOS Media Servers runs on linux and use NodeJS, OpenWRT, FOSS and UPnP technologies which make streaming across multiple platforms more painless than ever.
